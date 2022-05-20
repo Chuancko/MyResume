@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+}
+p {
+  margin: 0.3em 0;
+}
+h1 {
+  font-size: 25px;
+  margin-top: 0;
+}
+h2 {
+  color: rgb(65, 131, 255);
+}
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+strong {
+  font-weight: normal;
+  color: rgb(65, 131, 255);
+}
+a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+p,
+li {
+  color: #666;
+}
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: white;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1em;
+}
+.bio {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bio > .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bio img {
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.line {
+  border: 1px solid rgb(65, 131, 255);
+  margin-bottom: 5px;
+}
+.aaa {
+  display: flex;
+  justify-content: space-between;
+}
+.projects {
+  margin-top: 20px;
+}
+.projects p {
+  color: #666;
+}
+
+.projects strong {
+  color: rgb(65, 131, 255);
+}
+
+.projects > ol {
+  margin-top: 0;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.projects > ol > li {
+  margin-bottom: 24px;
+}
+
+.projects > ol > li > header {
+  display: flex;
+  justify-content: space-between;
+}
+.projects > ol > li h3 {
+  display: inline-block;
+}
+.skills > .wrapper > ul {
+  color: #666;
+}
+.skills > .wrapper strong {
+  color: rgb(65, 131, 255);
+}
+.skills > .wrapper > ul > li {
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.openSource header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.openSource > ul > li {
+  margin-bottom: 24px;
+}
+.openSource header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.others > ul > li {
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.education {
+  line-height: 1.2;
+  margin-bottom: 8px;
+  margin-top: 25px;
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  article {
+    width: auto;
+    height: auto;
+  }
+  .bio img {
+    display: none;
+  }
+  .skills .wrapper {
+  }
+}
